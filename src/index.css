@@ -5,11 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 180vh;
-  background: linear-gradient(#2A00B7, #42006C);
+ 
+  position: relative;
+  background: url('https://ktn-uk.org/wp-content/uploads/2021/01/AdobeStock_375393450-scaled-e1611136805546.jpeg');
+  background-size: cover;
+
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

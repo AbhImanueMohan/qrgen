@@ -53,7 +53,7 @@ const Login = () => {
     anchor.href = qrCodeDataURL;
   
     // Set the download attribute to specify the filename
-    anchor.download = 'qrcode.jpeg';
+    anchor.download = 'qrcode.png';
   
     // Trigger a click event on the anchor to start the download
     anchor.click();
@@ -140,15 +140,22 @@ const Login = () => {
         </div>
       </form>
 
-      {qrCodeDataURL && (
-        <div className="input">
+      {qrCodeDataURL && ( <center>
+      <div className="input">
+            <div className="contens">
+       <h3>Name : {watch('username')}</h3>
+          <h3>Email : {watch('email')}</h3>
+          <h3>Company : {watch('company')}</h3>
+          <h3>Department : {watch('department')}</h3>
+          </div>
           <QRCode className="inpute" value={qrCodeDataURL} /><br />
           <div className="submit-container">
             <button className="submit" onClick={downloadQRCode}>
               Download QR Code
             </button>
+            
           </div>
-        </div>
+        </div> <br /></center> 
       )}
     </div>
   );

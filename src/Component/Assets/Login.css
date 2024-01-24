@@ -20,8 +20,14 @@
 }
 .input{
    
-  margin-left: 500px;
-  padding: 30px;
+  margin-left: 300px;
+  width: 500px;
+  height: 600px;
+  color: white;
+  border-radius: 5px;
+  background-color: #4b00b444;
+  border: 2px solid white;
+ 
 }
 .inpute{
      display: flex;
@@ -40,9 +46,9 @@
 }
 
 .submit-container{
-    display: flex;
+    /* display: flex;
     gap: 30px;
-    margin: 60px auto;
+    margin: 60px auto; */
 }
 .submit{
     display: flex;
